@@ -61,9 +61,9 @@ let addOne = (n) => {
 addOne(15);
 
 // - Execute the function and store the return value in a variable.
-let variable = addOne(n);
+let num = addOne(15);
 
-// - What is the typeof returnValue // string
+// - What is the typeof returnValue // number
 
 /* 2. Subtract one
 
@@ -94,9 +94,9 @@ let substractOne = (n) => {
 substractOne (23);
 
 // - Execute the function and store the return value in a variable.
-let variable = substractOne(n);
+let num = substractOne(n);
 
-// - What is the typeof returnValue // string
+// - What is the typeof returnValue // number
 /* 3. Add two numbers
 
 Write a function named `sum` that accepts two numbers and returns the sum of them.
@@ -197,17 +197,49 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function oddOrEven(num){
+  if (num % 2 === 0) {
+    return `Number is even`;
+  } else {
+    return `Number is odd`;
+  }
+}
 
 // - Write an anonymous Function Expression
+let oddOrEven = function (num) {
+  if (num % 2 === 0) {
+    return `Number is even`;
+  } else {
+    return `Number is odd`;
+  }
+};
 
 // - Write an named Function Expression
+let oddOrEven = function oddOrEvend (num) {
+  if (num % 2 === 0) {
+    return `Number is even`;
+  } else {
+    return `Number is odd`;
+  }
+};
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
-
+let oddOrEven = (num) => 
+num % 2 === 0 ? `Number is even` : `Number is odd`;
 // - Write an Arrow Function with curly brackets
+let oddOrEven = (num) => {
+  if (num % 2 === 0) {
+    return `Number is even`;
+  } else {
+    return `Number is odd`;
+  }
+};
 
 // - Execute the function
+oddOrEven();
 
 // - Execute the function and store the return value in a variable
+let oddNum = oddOrEven()
 
 // - What is the typeof returnValue
+"Number"
