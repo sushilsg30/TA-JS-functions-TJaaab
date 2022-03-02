@@ -40,19 +40,30 @@ Write a function named `addOne` that accepts a number, adds one to the given val
 Do the following with above problem.
 */
 
-// - Write a Function Declaration
-
+// - Write a Function Declaration 
+function addOne (n) {
+  return n + 1;
+}
 // - Write a Function Expression
+let addOne = function (n) {
+  return n + 1;
+};
 
 // - Write an Arrow Function without curly brackets(if possible)
+let addOne = (n) => n + 1;
 
 // - Write an Arrow Function with curly brackets
+let addOne = (n) => {
+  return n + 1;
+};
 
 // - Execute the function
+addOne(15);
 
 // - Execute the function and store the return value in a variable.
+let variable = addOne(n);
 
-// - What is the typeof returnValue
+// - What is the typeof returnValue // string
 
 /* 2. Subtract one
 
@@ -61,20 +72,31 @@ Write a function named `substractOne` that accepts a number, substracts one from
 Do the following with above problem.
 */
 
-// - Write a Function Declaration
+// - Write a Function Declaration 
+function substractOne (n) {
+  return n - 1;
+}
 
 // - Write a Function Expression
+let substractOne = function(n) {
+  return n - 1;
+};
 
 // - Write an Arrow Function without curly brackets(if possible)
+let substractOne =(n) => n - 1;
 
 // - Write an Arrow Function with curly brackets
+let substractOne = (n) => {
+  return n - 1;
+};
 
 // - Execute the function
+substractOne (23);
 
 // - Execute the function and store the return value in a variable.
+let variable = substractOne(n);
 
-// - What is the typeof returnValue
-
+// - What is the typeof returnValue // string
 /* 3. Add two numbers
 
 Write a function named `sum` that accepts two numbers and returns the sum of them.
@@ -83,18 +105,30 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function sum ( a ,b ) {
+  return a + b ;
+}
 
-// - Write a Function Expression
+// - Write a Function Expression 
+let sum = function (a , b) {
+  return a + b ;
+};
 
 // - Write an Arrow Function without curly brackets(if possible)
+let sum = (a ,b) => a + b;
 
 // - Write an Arrow Function with curly brackets
+let sum = (a ,b ) => {
+  return a + b ;
+}
 
 // - Execute the function
+sum ();
 
 // - Execute the function and store the return value in a variable
+variable = sum(a , b);
 
-// - What is the typeof returnValue
+// - What is the typeof returnValue // string
 
 /* 4. Square of the given value
 
@@ -104,18 +138,30 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function square ( a ,b ) {
+  return a * b ;
+}
 
 // - Write a Function Expression
+let square = function (a , b) {
+  return a + b ;
+};
 
 // - Write an Arrow Function without curly brackets(if possible)
+let square = (a ,b) => a * b;
 
 // - Write an Arrow Function with curly brackets
+let square = (a ,b ) => {
+  return a * b ;
+}
 
 // - Execute the function
+square ();
 
 // - Execute the function and store the return value in a variable
+variable = square(a , b);
 
-// - What is the typeof returnValue
+// - What is the typeof returnValue // string
 
 /* 5. Find isGreater
 
@@ -125,8 +171,10 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function is isGreater(x,y)
 
 // - Write a Function Expression
+let
 
 // - Write an Arrow Function without curly brackets(if possible)
 
