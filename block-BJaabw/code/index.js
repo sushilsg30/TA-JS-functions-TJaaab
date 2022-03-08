@@ -29,11 +29,7 @@ isInRange(1, 10, 19); // false
 
 // - Write a Function Decleration for above problem
 function isInRange(a,b,n) {
-  if (a => n <= b) {
-    alert(`true`);
-  } else {
-    alert(`false`);
-  }
+  return n > a && n < b;
 }
 // - Execute the function with required parameter
 // isInRange(a,b,n);
@@ -57,16 +53,17 @@ Obese: BMI is 30 or more
 
 function calculateBMI(height, weight) {
   let bmi = weight / (height * height);
-  if (bmi <= 18.5){
-    return `Underweight`;
-  } else if (18.5 <= bmi <= 24.9) {
-    return `Normal weight`;
-  } else if (25 <= bmi <= 29.9) {
-    return `Overweight`;
-  } else if (bmi >= 30) {
-    return `Obese`;
-  } else {
-    alert(`Wrong Input`);
+  switch(true){
+    case bmi < 18.5 : 
+    return "Underweight";
+    case bmi > 18.5 && bmi < 24.9:
+    return "Normal";
+    case bmi >25 && bmi <29.9:
+      return "Overweight";
+    case bmi > 30:
+      return "Obese";
+    default:
+      alert("Enter Valid Input");    
   }
   
 }
@@ -83,16 +80,15 @@ Create a function that take the age are return the appropiate drink based on the
 */
 
 function appropiateDrinks(age) {
-  if (age <= 14) {
-    return `drink fruit juice`;
-  } else if (14 <= age >= 18) {
-    return `drink soda`;
-  } else if (18 <= age >= 21) {
-    return `drink fruit-flavored beer` 
-  } else if (age >= 21) {
-    return `drink throat-piercing vodka`
-  } else {
-    return `Have a fruity`;
+  switch(true){
+    case age < 15: 
+    return "drink fruit juice";
+    case age < 18:
+    return "drink soda";
+    case age < 21:
+      return "drink fruit-flavored beer";
+    case age > 30:
+      return "drink throat-piercing vodka";   
   }
 }
 
@@ -107,8 +103,14 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum(a ,b) {
-  return a + b ;
+function sum(val1 , val2) {
+  if (typeof val1 == "number" && typeof val2 == "number"){
+    return val1 + val2;
+  } else if(typeof val1 == "string" && typeof val2 == "string") {
+    return val1 + " " + val2;
+  }else {
+    return `Enter Valid Input`;
+  }
 }
 
 // Function Test
