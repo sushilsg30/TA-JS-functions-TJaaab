@@ -11,10 +11,12 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(n) {
+  return n * 60;
+  
 }
 // - Execute the function with required parameter
+minToSec(2);
 
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
@@ -26,11 +28,15 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(a,b,n) {
+  if (a => n <= b) {
+    alert(`true`);
+  } else {
+    alert(`false`);
+  }
 }
 // - Execute the function with required parameter
-
+// isInRange(a,b,n);
 /* 2. calculateBMI
 
 
@@ -49,8 +55,20 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
+function calculateBMI(height, weight) {
+  let bmi = weight / (height * height);
+  if (bmi <= 18.5){
+    return `Underweight`;
+  } else if (18.5 <= bmi <= 24.9) {
+    return `Normal weight`;
+  } else if (25 <= bmi <= 29.9) {
+    return `Overweight`;
+  } else if (bmi >= 30) {
+    return `Obese`;
+  } else {
+    alert(`Wrong Input`);
+  }
+  
 }
 
 /* 3. appropiateDrinks
@@ -64,8 +82,18 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
+function appropiateDrinks(age) {
+  if (age <= 14) {
+    return `drink fruit juice`;
+  } else if (14 <= age >= 18) {
+    return `drink soda`;
+  } else if (18 <= age >= 21) {
+    return `drink fruit-flavored beer` 
+  } else if (age >= 21) {
+    return `drink throat-piercing vodka`
+  } else {
+    return `Have a fruity`;
+  }
 }
 
 /* 4. Add two numers or string
@@ -74,13 +102,13 @@ Write a function that accepts two numbers or string and returns the sum of the n
 Twist is when user passes anything other than number, or string value you should be able to handle that.
 
 - If both values are number add them
-- If both values are string concat theme
+- If both values are string concat them
 - Anything other than that alert "Enter valid values"
 
 */
 
-function sum() {
-  // Your code
+function sum(a ,b) {
+  return a + b ;
 }
 
 // Function Test
